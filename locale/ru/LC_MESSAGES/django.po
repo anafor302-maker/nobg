@@ -1,0 +1,251 @@
+# RUSSIAN TRANSLATIONS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: ru\n"
+
+msgid "Ücretsiz Arka Plan Kaldırıcı | Background Remover"
+msgstr "Бесплатное удаление фона | Удалить фон с изображения"
+
+msgid "Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez."
+msgstr "Удаляйте фон с ваших фотографий быстро и бесплатно. 100% автоматически, без регистрации."
+
+msgid "arka plan kaldır, background remove, resim düzenleme, png"
+msgstr "удалить фон, удаление фона, редактор фото, png"
+
+msgid "Arka Plan Kaldırıcı"
+msgstr "Удаление фона"
+
+msgid "Fotoğraflarınızın arka planını saniyeler içinde kaldırın!"
+msgstr "Удалите фон с ваших фотографий за считанные секунды!"
+
+msgid "Resminizi buraya sürükleyin"
+msgstr "Перетащите изображение сюда"
+
+msgid "veya tıklayarak seçin"
+msgstr "или нажмите для выбора"
+
+msgid "Yükleniyor..."
+msgstr "Загрузка..."
+
+msgid "Arka plan kaldırılıyor..."
+msgstr "Удаление фона..."
+
+msgid "İşlem Tamamlandı!"
+msgstr "Готово!"
+
+msgid "İşlenmiş resim"
+msgstr "Обработанное изображение"
+
+msgid "PNG Olarak İndir"
+msgstr "Скачать как PNG"
+
+msgid "Yeni Resim"
+msgstr "Новое изображение"
+
+msgid "Hızlı & Kolay"
+msgstr "Быстро и просто"
+
+msgid "Saniyeler içinde arka planı kaldırın"
+msgstr "Удалите фон за считанные секунды"
+
+msgid "Güvenli"
+msgstr "Безопасно"
+
+msgid "Resimleriniz sunucuda saklanmaz"
+msgstr "Ваши изображения не хранятся на наших серверах"
+
+msgid "Ücretsiz"
+msgstr "Бесплатно"
+
+msgid "Kayıt veya ödeme gerektirmez"
+msgstr "Не требуется регистрация или оплата"
+
+msgid "Tüm hakları saklıdır."
+msgstr "Все права защищены."
+
+msgid "Gizlilik Politikası"
+msgstr "Политика конфиденциальности"
+
+msgid "Kullanım Şartları"
+msgstr "Условия использования"
+
+msgid "Dosya boyutu 10MB'dan küçük olmalıdır."
+msgstr "Размер файла должен быть менее 10 МБ."
+
+msgid "Lütfen bir resim dosyası seçin."
+msgstr "Пожалуйста, выберите файл изображения."
+
+msgid "Bir hata oluştu"
+msgstr "Произошла ошибка"
+
+msgid "Hata:"
+msgstr "Ошибка:"
+
+msgid "Son Güncelleme:"
+msgstr "Последнее обновление:"
+
+msgid "1. Toplanan Bilgiler"
+msgstr "1. Собираемая информация"
+
+msgid "Sitemizi kullanırken aşağıdaki bilgileri toplarız:"
+msgstr "При использовании нашего сайта мы собираем следующую информацию:"
+
+msgid "IP adresi (güvenlik ve rate limiting için)"
+msgstr "IP-адрес (для безопасности и ограничения скорости)"
+
+msgid "Yüklenen resim dosyaları (geçici olarak işlenir, saklanmaz)"
+msgstr "Загруженные файлы изображений (обрабатываются временно, не сохраняются)"
+
+msgid "Kullanım istatistikleri (anonim)"
+msgstr "Статистика использования (анонимная)"
+
+msgid "2. Bilgilerin Kullanımı"
+msgstr "2. Использование информации"
+
+msgid "Topladığımız bilgiler şu amaçlarla kullanılır:"
+msgstr "Собранная информация используется для:"
+
+msgid "Hizmetimizi sağlamak ve iyileştirmek"
+msgstr "Предоставления и улучшения нашего сервиса"
+
+msgid "Kötüye kullanımı önlemek"
+msgstr "Предотвращения злоупотреблений"
+
+msgid "Kullanım istatistiklerini analiz etmek"
+msgstr "Анализа статистики использования"
+
+msgid "3. Veri Güvenliği"
+msgstr "3. Безопасность данных"
+
+msgid "Yüklediğiniz resimler:"
+msgstr "Ваши загруженные изображения:"
+
+msgid "Sadece işlem sırasında belleğe alınır"
+msgstr "Загружаются в память только во время обработки"
+
+msgid "İşlem sonrası hemen silinir"
+msgstr "Удаляются сразу после обработки"
+
+msgid "Sunucularımızda saklanmaz"
+msgstr "Не хранятся на наших серверах"
+
+msgid "Üçüncü taraflarla paylaşılmaz"
+msgstr "Не передаются третьим лицам"
+
+msgid "4. Çerezler"
+msgstr "4. Файлы cookie"
+
+msgid "Sitemizde sadece temel işlevsellik için gerekli çerezler kullanılır. Reklam çerezleri Google AdSense tarafından yönetilir."
+msgstr "На нашем сайте используются только необходимые для базовой функциональности файлы cookie. Рекламные файлы cookie управляются Google AdSense."
+
+msgid "5. Üçüncü Taraf Hizmetler"
+msgstr "5. Сторонние сервисы"
+
+msgid "Sitemizde Google AdSense reklamları gösterilmektedir."
+msgstr "На нашем сайте показывается реклама Google AdSense."
+
+msgid "6. Haklarınız"
+msgstr "6. Ваши права"
+
+msgid "Kişisel verilerinizle ilgili haklarınız:"
+msgstr "Ваши права в отношении персональных данных:"
+
+msgid "Bilgi talep etme hakkı"
+msgstr "Право на запрос информации"
+
+msgid "Düzeltme talep etme hakkı"
+msgstr "Право на запрос исправления"
+
+msgid "Silme talep etme hakkı"
+msgstr "Право на запрос удаления"
+
+msgid "7. İletişim"
+msgstr "7. Контакты"
+
+msgid "Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz."
+msgstr "Вы можете связаться с нами по вопросам нашей политики конфиденциальности."
+
+msgid "Ana Sayfaya Dön"
+msgstr "Вернуться на главную"
+
+msgid "1. Hizmet Açıklaması"
+msgstr "1. Описание сервиса"
+
+msgid "Bu site, kullanıcılara resimlerinden arka plan kaldırma hizmeti sunar. Hizmet 'olduğu gibi' sunulur ve herhangi bir garanti verilmez."
+msgstr "Этот сайт предоставляет пользователям услугу удаления фона с их изображений. Сервис предоставляется 'как есть' без каких-либо гарантий."
+
+msgid "2. Kabul Edilebilir Kullanım"
+msgstr "2. Допустимое использование"
+
+msgid "Hizmetimizi kullanırken:"
+msgstr "При использовании нашего сервиса:"
+
+msgid "Yasa dışı içerik yüklememelisiniz"
+msgstr "Вы не должны загружать незаконный контент"
+
+msgid "Telif hakkı ihlali yapmamalısınız"
+msgstr "Вы не должны нарушать авторские права"
+
+msgid "Başkalarının haklarını ihlal etmemelisiniz"
+msgstr "Вы не должны нарушать права других"
+
+msgid "Sistemi kötüye kullanmamalısınız"
+msgstr "Вы не должны злоупотреблять системой"
+
+msgid "3. Kullanım Sınırları"
+msgstr "3. Ограничения использования"
+
+msgid "Hizmetimiz rate limiting kullanır:"
+msgstr "Наш сервис использует ограничение скорости:"
+
+msgid "10 dakikada maksimum 10 işlem"
+msgstr "Максимум 10 операций за 10 минут"
+
+msgid "Maksimum dosya boyutu: 10MB"
+msgstr "Максимальный размер файла: 10 МБ"
+
+msgid "Desteklenen formatlar: JPG, PNG, WEBP"
+msgstr "Поддерживаемые форматы: JPG, PNG, WEBP"
+
+msgid "4. Sorumluluk Reddi"
+msgstr "4. Отказ от ответственности"
+
+msgid "Hizmetimizi kullanarak:"
+msgstr "Используя наш сервис:"
+
+msgid "İşlenen resimlerin kalitesinden biz sorumlu değiliz"
+msgstr "Мы не несем ответственности за качество обработанных изображений"
+
+msgid "Hizmet kesintilerinden sorumlu değiliz"
+msgstr "Мы не несем ответственности за перерывы в обслуживании"
+
+msgid "Veri kaybından sorumlu değiliz"
+msgstr "Мы не несем ответственности за потерю данных"
+
+msgid "5. Fikri Mülkiyet"
+msgstr "5. Интеллектуальная собственность"
+
+msgid "Yüklediğiniz resimler sizin mülkiyetinizde kalır. İşlenmiş resimler üzerinde tüm haklar size aittir."
+msgstr "Ваши загруженные изображения остаются вашей собственностью. Все права на обработанные изображения принадлежат вам."
+
+msgid "6. Değişiklikler"
+msgstr "6. Изменения"
+
+msgid "Bu şartları herhangi bir zamanda değiştirme hakkımız saklıdır. Değişiklikler bu sayfada yayınlanacaktır."
+msgstr "Мы оставляем за собой право изменить эти условия в любое время. Изменения будут опубликованы на этой странице."
+
+msgid "7. Yasaklama"
+msgstr "7. Блокировка"
+
+msgid "Kötüye kullanım durumunda IP adresiniz engellenebilir. Engelleme sebepleri:"
+msgstr "В случае злоупотребления ваш IP-адрес может быть заблокирован. Причины блокировки:"
+
+msgid "Şüpheli URL denemeleri (wp-admin, phpmyadmin vb.)"
+msgstr "Подозрительные попытки URL (wp-admin, phpmyadmin и т.д.)"
+
+msgid "Rate limit aşımları"
+msgstr "Превышения ограничения скорости"
+
+msgid "Otomatik bot aktiviteleri"
+msgstr "Автоматизированные действия ботов"

@@ -1,0 +1,251 @@
+# ENGLISH TRANSLATIONS
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: en\n"
+
+msgid "Ücretsiz Arka Plan Kaldırıcı | Background Remover"
+msgstr "Free Background Remover | Remove Background from Images"
+
+msgid "Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez."
+msgstr "Remove background from your photos quickly and for free. 100% automatic, no registration required."
+
+msgid "arka plan kaldır, background remove, resim düzenleme, png"
+msgstr "remove background, background remover, photo editor, png"
+
+msgid "Arka Plan Kaldırıcı"
+msgstr "Background Remover"
+
+msgid "Fotoğraflarınızın arka planını saniyeler içinde kaldırın!"
+msgstr "Remove background from your photos in seconds!"
+
+msgid "Resminizi buraya sürükleyin"
+msgstr "Drag your image here"
+
+msgid "veya tıklayarak seçin"
+msgstr "or click to select"
+
+msgid "Yükleniyor..."
+msgstr "Loading..."
+
+msgid "Arka plan kaldırılıyor..."
+msgstr "Removing background..."
+
+msgid "İşlem Tamamlandı!"
+msgstr "Process Completed!"
+
+msgid "İşlenmiş resim"
+msgstr "Processed image"
+
+msgid "PNG Olarak İndir"
+msgstr "Download as PNG"
+
+msgid "Yeni Resim"
+msgstr "New Image"
+
+msgid "Hızlı & Kolay"
+msgstr "Fast & Easy"
+
+msgid "Saniyeler içinde arka planı kaldırın"
+msgstr "Remove background in seconds"
+
+msgid "Güvenli"
+msgstr "Secure"
+
+msgid "Resimleriniz sunucuda saklanmaz"
+msgstr "Your images are not stored on our servers"
+
+msgid "Ücretsiz"
+msgstr "Free"
+
+msgid "Kayıt veya ödeme gerektirmez"
+msgstr "No registration or payment required"
+
+msgid "Tüm hakları saklıdır."
+msgstr "All rights reserved."
+
+msgid "Gizlilik Politikası"
+msgstr "Privacy Policy"
+
+msgid "Kullanım Şartları"
+msgstr "Terms of Service"
+
+msgid "Dosya boyutu 10MB'dan küçük olmalıdır."
+msgstr "File size must be less than 10MB."
+
+msgid "Lütfen bir resim dosyası seçin."
+msgstr "Please select an image file."
+
+msgid "Bir hata oluştu"
+msgstr "An error occurred"
+
+msgid "Hata:"
+msgstr "Error:"
+
+msgid "Son Güncelleme:"
+msgstr "Last Updated:"
+
+msgid "1. Toplanan Bilgiler"
+msgstr "1. Information We Collect"
+
+msgid "Sitemizi kullanırken aşağıdaki bilgileri toplarız:"
+msgstr "When you use our site, we collect the following information:"
+
+msgid "IP adresi (güvenlik ve rate limiting için)"
+msgstr "IP address (for security and rate limiting)"
+
+msgid "Yüklenen resim dosyaları (geçici olarak işlenir, saklanmaz)"
+msgstr "Uploaded image files (processed temporarily, not stored)"
+
+msgid "Kullanım istatistikleri (anonim)"
+msgstr "Usage statistics (anonymous)"
+
+msgid "2. Bilgilerin Kullanımı"
+msgstr "2. How We Use Information"
+
+msgid "Topladığımız bilgiler şu amaçlarla kullanılır:"
+msgstr "The information we collect is used for:"
+
+msgid "Hizmetimizi sağlamak ve iyileştirmek"
+msgstr "Providing and improving our service"
+
+msgid "Kötüye kullanımı önlemek"
+msgstr "Preventing abuse"
+
+msgid "Kullanım istatistiklerini analiz etmek"
+msgstr "Analyzing usage statistics"
+
+msgid "3. Veri Güvenliği"
+msgstr "3. Data Security"
+
+msgid "Yüklediğiniz resimler:"
+msgstr "Your uploaded images:"
+
+msgid "Sadece işlem sırasında belleğe alınır"
+msgstr "Are only loaded into memory during processing"
+
+msgid "İşlem sonrası hemen silinir"
+msgstr "Are deleted immediately after processing"
+
+msgid "Sunucularımızda saklanmaz"
+msgstr "Are not stored on our servers"
+
+msgid "Üçüncü taraflarla paylaşılmaz"
+msgstr "Are not shared with third parties"
+
+msgid "4. Çerezler"
+msgstr "4. Cookies"
+
+msgid "Sitemizde sadece temel işlevsellik için gerekli çerezler kullanılır. Reklam çerezleri Google AdSense tarafından yönetilir."
+msgstr "Our site only uses cookies necessary for basic functionality. Advertising cookies are managed by Google AdSense."
+
+msgid "5. Üçüncü Taraf Hizmetler"
+msgstr "5. Third-Party Services"
+
+msgid "Sitemizde Google AdSense reklamları gösterilmektedir."
+msgstr "Google AdSense advertisements are displayed on our site."
+
+msgid "6. Haklarınız"
+msgstr "6. Your Rights"
+
+msgid "Kişisel verilerinizle ilgili haklarınız:"
+msgstr "Your rights regarding your personal data:"
+
+msgid "Bilgi talep etme hakkı"
+msgstr "Right to request information"
+
+msgid "Düzeltme talep etme hakkı"
+msgstr "Right to request correction"
+
+msgid "Silme talep etme hakkı"
+msgstr "Right to request deletion"
+
+msgid "7. İletişim"
+msgstr "7. Contact"
+
+msgid "Gizlilik politikamızla ilgili sorularınız için bizimle iletişime geçebilirsiniz."
+msgstr "You can contact us with questions about our privacy policy."
+
+msgid "Ana Sayfaya Dön"
+msgstr "Back to Home"
+
+msgid "1. Hizmet Açıklaması"
+msgstr "1. Service Description"
+
+msgid "Bu site, kullanıcılara resimlerinden arka plan kaldırma hizmeti sunar. Hizmet 'olduğu gibi' sunulur ve herhangi bir garanti verilmez."
+msgstr "This site provides users with a background removal service for their images. The service is provided 'as is' without any warranty."
+
+msgid "2. Kabul Edilebilir Kullanım"
+msgstr "2. Acceptable Use"
+
+msgid "Hizmetimizi kullanırken:"
+msgstr "When using our service:"
+
+msgid "Yasa dışı içerik yüklememelisiniz"
+msgstr "You must not upload illegal content"
+
+msgid "Telif hakkı ihlali yapmamalısınız"
+msgstr "You must not infringe copyright"
+
+msgid "Başkalarının haklarını ihlal etmemelisiniz"
+msgstr "You must not violate others' rights"
+
+msgid "Sistemi kötüye kullanmamalısınız"
+msgstr "You must not abuse the system"
+
+msgid "3. Kullanım Sınırları"
+msgstr "3. Usage Limits"
+
+msgid "Hizmetimiz rate limiting kullanır:"
+msgstr "Our service uses rate limiting:"
+
+msgid "10 dakikada maksimum 10 işlem"
+msgstr "Maximum 10 operations in 10 minutes"
+
+msgid "Maksimum dosya boyutu: 10MB"
+msgstr "Maximum file size: 10MB"
+
+msgid "Desteklenen formatlar: JPG, PNG, WEBP"
+msgstr "Supported formats: JPG, PNG, WEBP"
+
+msgid "4. Sorumluluk Reddi"
+msgstr "4. Disclaimer"
+
+msgid "Hizmetimizi kullanarak:"
+msgstr "By using our service:"
+
+msgid "İşlenen resimlerin kalitesinden biz sorumlu değiliz"
+msgstr "We are not responsible for the quality of processed images"
+
+msgid "Hizmet kesintilerinden sorumlu değiliz"
+msgstr "We are not responsible for service interruptions"
+
+msgid "Veri kaybından sorumlu değiliz"
+msgstr "We are not responsible for data loss"
+
+msgid "5. Fikri Mülkiyet"
+msgstr "5. Intellectual Property"
+
+msgid "Yüklediğiniz resimler sizin mülkiyetinizde kalır. İşlenmiş resimler üzerinde tüm haklar size aittir."
+msgstr "Your uploaded images remain your property. All rights to processed images belong to you."
+
+msgid "6. Değişiklikler"
+msgstr "6. Changes"
+
+msgid "Bu şartları herhangi bir zamanda değiştirme hakkımız saklıdır. Değişiklikler bu sayfada yayınlanacaktır."
+msgstr "We reserve the right to change these terms at any time. Changes will be published on this page."
+
+msgid "7. Yasaklama"
+msgstr "7. Banning"
+
+msgid "Kötüye kullanım durumunda IP adresiniz engellenebilir. Engelleme sebepleri:"
+msgstr "Your IP address may be blocked in case of abuse. Blocking reasons:"
+
+msgid "Şüpheli URL denemeleri (wp-admin, phpmyadmin vb.)"
+msgstr "Suspicious URL attempts (wp-admin, phpmyadmin, etc.)"
+
+msgid "Rate limit aşımları"
+msgstr "Rate limit violations"
+
+msgid "Otomatik bot aktiviteleri"
+msgstr "Automated bot activities"

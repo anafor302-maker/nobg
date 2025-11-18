@@ -1,0 +1,30 @@
+from django.contrib import admin
+from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
+from django.conf.urls.i18n import i18n_patterns
+from remover import views
+
+# Dil değiştirme URL'i i18n_patterns DIŞINDA olmalı
+urlpatterns = [
+    path('i18n/', include('django.conf.urls.i18n')),
+]
+
+# Diğer URL'ler i18n_patterns içinde
+urlpatterns += i18n_patterns(
+    path('admin/', admin.site.urls),
+    path('', views.home, name='home'),
+    path('remove-background/', views.remove_background, name='remove_background'),
+    path('privacy/', views.privacy_policy, name='privacy'),
+    path('terms/', views.terms, name='terms'),
+    prefix_default_language=False,
+)
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+# Admin panel özelleştirmeleri
+admin.site.site_header = "Background Remover Admin"
+admin.site.site_title = "Background Remover"
+admin.site.index_title = "Yönetim Paneli"

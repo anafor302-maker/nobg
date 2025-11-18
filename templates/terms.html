@@ -1,0 +1,115 @@
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% trans "Kullanım Şartları" %} | Background Remover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 50px 20px;
+        }
+        .content-card {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        .language-selector {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        .language-btn {
+            background: white;
+            border: none;
+            border-radius: 25px;
+            padding: 8px 15px;
+            margin: 0 5px;
+            font-size: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .language-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        .language-btn.active {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Selector -->
+    <div class="language-selector">
+        <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+            {% csrf_token %}
+            <input name="next" type="hidden" value="{{ request.get_full_path }}">
+            <button type="submit" name="language" value="tr" class="language-btn {% if LANGUAGE_CODE == 'tr' %}active{% endif %}">🇹🇷</button>
+            <button type="submit" name="language" value="en" class="language-btn {% if LANGUAGE_CODE == 'en' %}active{% endif %}">🇬🇧</button>
+            <button type="submit" name="language" value="de" class="language-btn {% if LANGUAGE_CODE == 'de' %}active{% endif %}">🇩🇪</button>
+            <button type="submit" name="language" value="ru" class="language-btn {% if LANGUAGE_CODE == 'ru' %}active{% endif %}">🇷🇺</button>
+        </form>
+    </div>
+
+    <div class="content-card">
+        <h1 class="mb-4">{% trans "Kullanım Şartları" %}</h1>
+        
+        <p><strong>{% trans "Son Güncelleme:" %}</strong> {% now "d F Y" %}</p>
+        
+        <h3 class="mt-4">{% trans "1. Hizmet Açıklaması" %}</h3>
+        <p>{% trans "Bu site, kullanıcılara resimlerinden arka plan kaldırma hizmeti sunar. Hizmet 'olduğu gibi' sunulur ve herhangi bir garanti verilmez." %}</p>
+        
+        <h3 class="mt-4">{% trans "2. Kabul Edilebilir Kullanım" %}</h3>
+        <p>{% trans "Hizmetimizi kullanırken:" %}</p>
+        <ul>
+            <li>{% trans "Yasa dışı içerik yüklememelisiniz" %}</li>
+            <li>{% trans "Telif hakkı ihlali yapmamalısınız" %}</li>
+            <li>{% trans "Başkalarının haklarını ihlal etmemelisiniz" %}</li>
+            <li>{% trans "Sistemi kötüye kullanmamalısınız" %}</li>
+        </ul>
+        
+        <h3 class="mt-4">{% trans "3. Kullanım Sınırları" %}</h3>
+        <p>{% trans "Hizmetimiz rate limiting kullanır:" %}</p>
+        <ul>
+            <li>{% trans "10 dakikada maksimum 10 işlem" %}</li>
+            <li>{% trans "Maksimum dosya boyutu: 10MB" %}</li>
+            <li>{% trans "Desteklenen formatlar: JPG, PNG, WEBP" %}</li>
+        </ul>
+        
+        <h3 class="mt-4">{% trans "4. Sorumluluk Reddi" %}</h3>
+        <p>{% trans "Hizmetimizi kullanarak:" %}</p>
+        <ul>
+            <li>{% trans "İşlenen resimlerin kalitesinden biz sorumlu değiliz" %}</li>
+            <li>{% trans "Hizmet kesintilerinden sorumlu değiliz" %}</li>
+            <li>{% trans "Veri kaybından sorumlu değiliz" %}</li>
+        </ul>
+        
+        <h3 class="mt-4">{% trans "5. Fikri Mülkiyet" %}</h3>
+        <p>{% trans "Yüklediğiniz resimler sizin mülkiyetinizde kalır. İşlenmiş resimler üzerinde tüm haklar size aittir." %}</p>
+        
+        <h3 class="mt-4">{% trans "6. Değişiklikler" %}</h3>
+        <p>{% trans "Bu şartları herhangi bir zamanda değiştirme hakkımız saklıdır. Değişiklikler bu sayfada yayınlanacaktır." %}</p>
+        
+        <h3 class="mt-4">{% trans "7. Yasaklama" %}</h3>
+        <p>{% trans "Kötüye kullanım durumunda IP adresiniz engellenebilir. Engelleme sebepleri:" %}</p>
+        <ul>
+            <li>{% trans "Şüpheli URL denemeleri (wp-admin, phpmyadmin vb.)" %}</li>
+            <li>{% trans "Rate limit aşımları" %}</li>
+            <li>{% trans "Otomatik bot aktiviteleri" %}</li>
+        </ul>
+        
+        <div class="text-center mt-5">
+            <a href="{% url 'home' %}" class="btn btn-primary">{% trans "Ana Sayfaya Dön" %}</a>
+        </div>
+    </div>
+</body>
+</html>
