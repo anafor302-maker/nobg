@@ -5,5 +5,7 @@ python-magic==0.4.27
 gunicorn
 whitenoise
 psycopg2-binary
-
+aiohttp==3.9.5
+numpy==1.26.4
+onnxruntime==1.16.3
 
