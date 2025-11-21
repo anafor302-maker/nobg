@@ -5,8 +5,9 @@ from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from remover import views
 
-# Dil değiştirme URL'i i18n_patterns DIŞINDA olmalı
+# Root URL için tarayıcı diline göre yönlendirme
 urlpatterns = [
+    path('', views.root_redirect, name='root_redirect'),
     path('i18n/', include('django.conf.urls.i18n')),
 ]
 
@@ -17,7 +18,6 @@ urlpatterns += i18n_patterns(
     path('remove-background/', views.remove_background, name='remove_background'),
     path('privacy/', views.privacy_policy, name='privacy'),
     path('terms/', views.terms, name='terms'),
-    prefix_default_language=False,
 )
 
 if settings.DEBUG:

@@ -1,9 +1,9 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import JsonResponse, HttpResponse
 from django.views.decorators.csrf import ensure_csrf_cookie
-from django.views.decorators.csrf import csrf_exempt
 from django.conf import settings
 from django.utils import timezone
+from django.utils.translation import get_language
 from datetime import timedelta
 from rembg import remove
 from PIL import Image
@@ -30,11 +30,16 @@ def check_rate_limit(ip):
     
     return recent_requests < settings.RATE_LIMIT_REQUESTS
 
+def root_redirect(request):
+    """Root URL'den kullanıcının tarayıcı diline göre yönlendir"""
+    from django.utils.translation import get_language_from_request
+    lang = get_language_from_request(request)
+    return redirect(f'/{lang}/')
+
 def home(request):
     """Ana sayfa"""
     return render(request, 'home.html')
 
-@csrf_exempt
 def remove_background(request):
     """Arka plan kaldırma endpoint'i"""
     if request.method != 'POST':
