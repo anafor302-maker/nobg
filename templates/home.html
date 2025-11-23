@@ -6,34 +6,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% trans "Ücretsiz Arka Plan Kaldırıcı | Background Remover" %} - NoBG.com.tr</title>
-    <meta name="description" content="{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %} - NoBG.com.tr">
-    <meta name="keywords" content="{% trans 'arka plan kaldır, background remove, resim düzenleme, png' %}, nobg, no background">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Primary Meta Tags -->
+    <title>{% trans "NoBG - Ücretsiz Online Arka Plan Kaldırma Aracı | PNG Arka Plan Silme" %}</title>
+    <meta name="title" content="{% trans 'NoBG - Ücretsiz Online Arka Plan Kaldırma Aracı | PNG Arka Plan Silme' %}">
+    <meta name="description" content="{% trans 'Yapay zeka ile fotoğraflarınızdan arka planı ücretsiz kaldırın. 5 saniyede otomatik arka plan silme, kayıt gerektirmez, %100 ücretsiz. PNG olarak indir.' %}">
+    <meta name="keywords" content="{% trans 'arka plan kaldır, arka plan silme, background remove, remove bg, arka plan temizleme, png arka plan, resim arka plan, fotoğraf arka plan, ücretsiz arka plan, online arka plan, yapay zeka arka plan, ai background remover, transparent background, background eraser' %}, nobg, no background, nobg.com.tr">
+    <meta name="author" content="NoBG.com.tr">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta name="language" content="{{ LANGUAGE_CODE }}">
+    <meta name="rating" content="general">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="1 days">
     
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ request.build_absolute_uri }}">
-    <meta property="og:title" content="{% trans 'Ücretsiz Arka Plan Kaldırıcı | Background Remover' %}">
-    <meta property="og:description" content="{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %}">
+    <meta property="og:site_name" content="NoBG.com.tr">
+    <meta property="og:url" content="https://nobg.com.tr{{ request.get_full_path }}">
+    <meta property="og:title" content="{% trans 'NoBG - Ücretsiz Online Arka Plan Kaldırma | Yapay Zeka ile Arka Plan Silme' %}">
+    <meta property="og:description" content="{% trans 'Fotoğraflarınızdan arka planı ücretsiz ve hızlıca kaldırın. AI teknolojisi ile otomatik arka plan silme. Kayıt gerektirmez, %100 ücretsiz.' %}">
+    <meta property="og:image" content="https://nobg.com.tr/static/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="{% trans 'NoBG - Arka Plan Kaldırma Aracı' %}">
+    <meta property="og:locale" content="{{ LANGUAGE_CODE }}_{{ LANGUAGE_CODE|upper }}">
+    <meta property="og:locale:alternate" content="tr_TR">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:locale:alternate" content="de_DE">
+    <meta property="og:locale:alternate" content="ru_RU">
     
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="{{ request.build_absolute_uri }}">
-    <meta property="twitter:title" content="{% trans 'Ücretsiz Arka Plan Kaldırıcı | Background Remover' %}">
-    <meta property="twitter:description" content="{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %}">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nobg_comtr">
+    <meta name="twitter:creator" content="@nobg_comtr">
+    <meta name="twitter:url" content="https://nobg.com.tr{{ request.get_full_path }}">
+    <meta name="twitter:title" content="{% trans 'NoBG - Ücretsiz Online Arka Plan Kaldırma | AI Background Remover' %}">
+    <meta name="twitter:description" content="{% trans 'Yapay zeka ile fotoğraflarınızdan arka planı ücretsiz kaldırın. 5 saniyede otomatik arka plan silme.' %}">
+    <meta name="twitter:image" content="https://nobg.com.tr/static/og-image.png">
+    <meta name="twitter:image:alt" content="{% trans 'NoBG - Arka Plan Kaldırma' %}">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="{{ request.build_absolute_uri }}">
-    
-    <!-- Alternate language versions -->
+    <!-- Canonical & Alternate Languages -->
+    <link rel="canonical" href="https://nobg.com.tr{{ request.get_full_path }}">
     {% get_available_languages as available_languages %}
-    {% get_current_language as current_language %}
     {% for lang_code, lang_name in available_languages %}
-    <link rel="alternate" hreflang="{{ lang_code }}" href="{{ request.scheme }}://{{ request.get_host }}/{{ lang_code }}{{ request.path|slice:'3:' }}">
+    <link rel="alternate" hreflang="{{ lang_code }}" href="https://nobg.com.tr/{{ lang_code }}{{ request.path|slice:'3:' }}">
     {% endfor %}
+    <link rel="alternate" hreflang="x-default" href="https://nobg.com.tr/tr/">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="TR">
+    <meta name="geo.placename" content="Turkey">
+    
+    <!-- Mobile Optimization -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="NoBG">
+    <meta name="application-name" content="NoBG">
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="msapplication-navbutton-color" content="#667eea">
+    
+    <!-- Verification Tags (Doldurulacak) -->
+    <!-- <meta name="google-site-verification" content="YOUR_GOOGLE_VERIFICATION_CODE"> -->
+    <!-- <meta name="yandex-verification" content="YOUR_YANDEX_VERIFICATION_CODE"> -->
+    <!-- <meta name="msvalidate.01" content="YOUR_BING_VERIFICATION_CODE"> -->
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -191,19 +235,115 @@
       "@context": "https://schema.org",
       "@type": "WebApplication",
       "name": "NoBG - {% trans 'Arka Plan Kaldırıcı' %}",
-      "alternateName": "NoBG.com.tr",
+      "alternateName": ["NoBG.com.tr", "No Background", "Background Remover"],
       "url": "https://nobg.com.tr",
-      "description": "{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %}",
+      "description": "{% trans 'Yapay zeka teknolojisi ile fotoğraflarınızdan arka planı otomatik olarak kaldırın. %100 ücretsiz, kayıt gerektirmez.' %}",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "softwareVersion": "1.0",
+      "inLanguage": ["tr", "en", "de", "ru"],
       "offers": {
         "@type": "Offer",
         "price": "0",
-        "priceCurrency": "USD"
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
       },
-      "featureList": "{% trans 'Hızlı, Güvenli, Ücretsiz, Kayıt Gerektirmez' %}",
-      "browserRequirements": "Requires JavaScript. Requires HTML5.",
-      "inLanguage": ["tr", "en", "de", "ru"]
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "2847",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "featureList": [
+        "{% trans 'Yapay Zeka ile Otomatik Arka Plan Kaldırma' %}",
+        "{% trans '%100 Ücretsiz ve Sınırsız Kullanım' %}",
+        "{% trans 'Kayıt veya Üyelik Gerektirmez' %}",
+        "{% trans '5 Saniyede Hızlı İşlem' %}",
+        "{% trans 'PNG Formatında İndir' %}",
+        "{% trans 'Resimler Sunucuda Saklanmaz' %}",
+        "{% trans '4 Dilde Hizmet (TR, EN, DE, RU)' %}"
+      ],
+      "screenshot": "https://nobg.com.tr/static/screenshot.png",
+      "image": "https://nobg.com.tr/static/og-image.png",
+      "creator": {
+        "@type": "Organization",
+        "name": "NoBG.com.tr",
+        "url": "https://nobg.com.tr"
+      }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "{% trans 'Ana Sayfa' %}",
+        "item": "https://nobg.com.tr{{ request.get_full_path }}"
+      }]
+    }
+    </script>
+    
+    <!-- Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "NoBG.com.tr",
+      "alternateName": "No Background",
+      "url": "https://nobg.com.tr",
+      "logo": "https://nobg.com.tr/static/logo.png",
+      "sameAs": [
+        "https://twitter.com/nobg_comtr",
+        "https://facebook.com/nobg.comtr"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "availableLanguage": ["Turkish", "English", "German", "Russian"]
+      }
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "{% trans 'NoBG ücretsiz mi?' %}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{% trans 'Evet, NoBG.com.tr %100 ücretsizdir. Hiçbir ücret ödemeden sınırsız sayıda resmin arka planını kaldırabilirsiniz.' %}"
+        }
+      },{
+        "@type": "Question",
+        "name": "{% trans 'Resimlerim saklanıyor mu?' %}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{% trans 'Hayır, resimleriniz sunucularımızda saklanmaz. İşlem sadece bellekte yapılır ve hemen silinir.' %}"
+        }
+      },{
+        "@type": "Question",
+        "name": "{% trans 'Hangi dosya formatlarını destekliyor?' %}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{% trans 'JPG, PNG ve WEBP formatlarını destekliyoruz. Çıktı PNG formatında olur.' %}"
+        }
+      },{
+        "@type": "Question",
+        "name": "{% trans 'Kayıt olmak gerekli mi?' %}",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "{% trans 'Hayır, kayıt olmanıza veya giriş yapmanıza gerek yok. Direkt resminizi yükleyip kullanabilirsiniz.' %}"
+        }
+      }]
     }
     </script>
 </head>

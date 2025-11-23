@@ -249,3 +249,103 @@ msgstr "Превышения ограничения скорости"
 
 msgid "Otomatik bot aktiviteleri"
 msgstr "Автоматизированные действия ботов"
+
+# SEO Meta Tags
+msgid "NoBG - Ücretsiz Online Arka Plan Kaldırma Aracı | PNG Arka Plan Silme"
+msgstr "NoBG - Бесплатный онлайн инструмент для удаления фона | Удалить фон PNG"
+
+msgid "Yapay zeka ile fotoğraflarınızdan arka planı ücretsiz kaldırın. 5 saniyede otomatik arka plan silme, kayıt gerektirmez, %100 ücretsiz. PNG olarak indir."
+msgstr "Удаляйте фон с ваших фотографий бесплатно с помощью ИИ. Автоматическое удаление фона за 5 секунд, без регистрации, 100% бесплатно. Скачать в PNG."
+
+msgid "arka plan kaldır, arka plan silme, background remove, remove bg, arka plan temizleme, png arka plan, resim arka plan, fotoğraf arka plan, ücretsiz arka plan, online arka plan, yapay zeka arka plan, ai background remover, transparent background, background eraser"
+msgstr "удалить фон, удаление фона, remove bg, убрать фон, png фон, фото фон, бесплатное удаление фона, онлайн удаление фона, ии удаление фона, прозрачный фон, ластик фона"
+
+msgid "NoBG - Ücretsiz Online Arka Plan Kaldırma | Yapay Zeka ile Arka Plan Silme"
+msgstr "NoBG - Бесплатное онлайн удаление фона | Удаление фона с ИИ"
+
+msgid "Fotoğraflarınızdan arka planı ücretsiz ve hızlıca kaldırın. AI teknolojisi ile otomatik arka plan silme. Kayıt gerektirmez, %100 ücretsiz."
+msgstr "Удаляйте фон с ваших фотографий быстро и бесплатно. Автоматическое удаление фона с технологией ИИ. Без регистрации, 100% бесплатно."
+
+msgid "NoBG - Arka Plan Kaldırma Aracı"
+msgstr "NoBG - Инструмент удаления фона"
+
+msgid "NoBG - Ücretsiz Online Arka Plan Kaldırma | AI Background Remover"
+msgstr "NoBG - Бесплатное онлайн удаление фона | ИИ удаление фона"
+
+msgid "Yapay zeka ile fotoğraflarınızdan arka planı ücretsiz kaldırın. 5 saniyede otomatik arka plan silme."
+msgstr "Удаляйте фон с ваших фотографий бесплатно с помощью ИИ. Автоматическое удаление фона за 5 секунд."
+
+msgid "NoBG - Arka Plan Kaldırma"
+msgstr "NoBG - Удаление фона"
+
+msgid "Yapay Zeka ile Otomatik Arka Plan Kaldırma"
+msgstr "Автоматическое удаление фона с ИИ"
+
+msgid "%100 Ücretsiz ve Sınırsız Kullanım"
+msgstr "100% бесплатно и неограниченное использование"
+
+msgid "Kayıt veya Üyelik Gerektirmez"
+msgstr "Не требуется регистрация или членство"
+
+msgid "5 Saniyede Hızlı İşlem"
+msgstr "Быстрая обработка за 5 секунд"
+
+msgid "PNG Formatında İndir"
+msgstr "Скачать в формате PNG"
+
+msgid "Resimler Sunucuda Saklanmaz"
+msgstr "Изображения не хранятся на сервере"
+
+msgid "4 Dilde Hizmet (TR, EN, DE, RU)"
+msgstr "Сервис на 4 языках (TR, EN, DE, RU)"
+
+msgid "Ana Sayfa"
+msgstr "Главная страница"
+
+msgid "NoBG ücretsiz mi?"
+msgstr "Является ли NoBG бесплатным?"
+
+msgid "Evet, NoBG.com.tr %100 ücretsizdir. Hiçbir ücret ödemeden sınırsız sayıda resmin arka planını kaldırabilirsiniz."
+msgstr "Да, NoBG.com.tr на 100% бесплатен. Вы можете удалять фон с неограниченного количества фотографий без оплаты."
+
+msgid "Resimlerim saklanıyor mu?"
+msgstr "Хранятся ли мои изображения?"
+
+msgid "Hayır, resimleriniz sunucularımızda saklanmaz. İşlem sadece bellekte yapılır ve hemen silinir."
+msgstr "Нет, ваши изображения не хранятся на наших серверах. Обработка выполняется только в памяти и сразу удаляется."
+
+msgid "Hangi dosya formatlarını destekliyor?"
+msgstr "Какие форматы файлов поддерживаются?"
+
+msgid "JPG, PNG ve WEBP formatlarını destekliyoruz. Çıktı PNG formatında olur."
+msgstr "Мы поддерживаем форматы JPG, PNG и WEBP. Вывод в формате PNG."
+
+msgid "Kayıt olmak gerekli mi?"
+msgstr "Требуется ли регистрация?"
+
+msgid "Hayır, kayıt olmanıza veya giriş yapmanıza gerek yok. Direkt resminizi yükleyip kullanabilirsiniz."
+msgstr "Нет, вам не нужно регистрироваться или входить в систему. Вы можете напрямую загрузить изображение и использовать его."
+
+msgid "Veri Güvenliği ve Gizlilik"
+msgstr "Безопасность данных и конфиденциальность"
+
+msgid "NoBG.com.tr gizlilik politikası. Verileriniz nasıl korunur, resimleriniz saklanır mı? Tüm gizlilik bilgileri burada."
+msgstr "Политика конфиденциальности NoBG.com.tr. Как защищены ваши данные, хранятся ли ваши изображения? Вся информация о конфиденциальности здесь."
+
+msgid "NoBG.com.tr gizlilik politikası ve veri güvenliği"
+msgstr "Политика конфиденциальности NoBG.com.tr и безопасность данных"
+
+msgid "Hizmet Şartları"
+msgstr "Условия обслуживания"
+
+msgid "NoBG.com.tr kullanım şartları ve koşulları. Hizmetimizi kullanırken dikkat edilmesi gerekenler."
+msgstr "Условия использования NoBG.com.tr. На что обратить внимание при использовании нашего сервиса."
+
+msgid "NoBG.com.tr hizmet kullanım şartları"
+msgstr "Условия использования сервиса NoBG.com.tr"
+
+msgid "Sunucu hatası oluştu"
+msgstr "Произошла ошибка сервера"
+
+msgid "Yapay zeka teknolojisi ile fotoğraflarınızdan arka planı otomatik olarak kaldırın. %100 ücretsiz, kayıt gerektirmez."
+msgstr "Автоматически удаляйте фон с ваших фотографий с помощью технологии искусственного интеллекта. 100% бесплатно, без регистрации."
