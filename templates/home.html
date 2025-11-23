@@ -6,9 +6,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% trans "Ücretsiz Arka Plan Kaldırıcı | Background Remover" %}</title>
-    <meta name="description" content="{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %}">
-    <meta name="keywords" content="{% trans 'arka plan kaldır, background remove, resim düzenleme, png' %}">
+    <title>{% trans "Ücretsiz Arka Plan Kaldırıcı | Background Remover" %} - NoBG.com.tr</title>
+    <meta name="description" content="{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %} - NoBG.com.tr">
+    <meta name="keywords" content="{% trans 'arka plan kaldır, background remove, resim düzenleme, png' %}, nobg, no background">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ request.build_absolute_uri }}">
+    <meta property="og:title" content="{% trans 'Ücretsiz Arka Plan Kaldırıcı | Background Remover' %}">
+    <meta property="og:description" content="{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ request.build_absolute_uri }}">
+    <meta property="twitter:title" content="{% trans 'Ücretsiz Arka Plan Kaldırıcı | Background Remover' %}">
+    <meta property="twitter:description" content="{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %}">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ request.build_absolute_uri }}">
+    
+    <!-- Alternate language versions -->
+    {% get_available_languages as available_languages %}
+    {% get_current_language as current_language %}
+    {% for lang_code, lang_name in available_languages %}
+    <link rel="alternate" hreflang="{{ lang_code }}" href="{{ request.scheme }}://{{ request.get_host }}/{{ lang_code }}{{ request.path|slice:'3:' }}">
+    {% endfor %}
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -159,11 +184,33 @@
     <!-- Google AdSense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
      crossorigin="anonymous"></script>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "NoBG - {% trans 'Arka Plan Kaldırıcı' %}",
+      "alternateName": "NoBG.com.tr",
+      "url": "https://nobg.com.tr",
+      "description": "{% trans 'Fotoğraflarınızın arka planını ücretsiz ve hızlı bir şekilde kaldırın. %100 otomatik, kayıt gerektirmez.' %}",
+      "applicationCategory": "MultimediaApplication",
+      "operatingSystem": "All",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "featureList": "{% trans 'Hızlı, Güvenli, Ücretsiz, Kayıt Gerektirmez' %}",
+      "browserRequirements": "Requires JavaScript. Requires HTML5.",
+      "inLanguage": ["tr", "en", "de", "ru"]
+    }
+    </script>
 </head>
 <body>
     <!-- Language Selector -->
     <div class="language-selector">
-        <form action="{% url 'set_language' %}" method="post" style="display: inline;">
+        <form action="/i18n/setlang/" method="post" style="display: inline;">
             {% csrf_token %}
             <input name="next" type="hidden" value="{{ request.get_full_path }}">
             <button type="submit" name="language" value="tr" class="language-btn {% if LANGUAGE_CODE == 'tr' %}active{% endif %}">🇹🇷</button>
@@ -175,7 +222,7 @@
 
     <div class="main-container">
         <div class="text-center mb-4">
-            <h1 class="text-white mb-3">🎨 {% trans "Arka Plan Kaldırıcı" %}</h1>
+            <h1 class="text-white mb-3">🎨 NoBG.com.tr</h1>
             <p class="text-white">{% trans "Fotoğraflarınızın arka planını saniyeler içinde kaldırın!" %}</p>
         </div>
         
@@ -186,6 +233,7 @@
                     <h4>{% trans "Resminizi buraya sürükleyin" %}</h4>
                     <p class="text-muted">{% trans "veya tıklayarak seçin" %}</p>
                     <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                    {% csrf_token %}
                 </div>
                 
                 <div class="loading" id="loading">
@@ -268,7 +316,7 @@
     </div>
     
     <footer>
-        <p>&copy; 2024 Background Remover. {% trans "Tüm hakları saklıdır." %}</p>
+        <p>&copy; 2024 NoBG.com.tr - {% trans "Tüm hakları saklıdır." %}</p>
         <div>
             <a href="{% url 'privacy' %}">{% trans "Gizlilik Politikası" %}</a> |
             <a href="{% url 'terms' %}">{% trans "Kullanım Şartları" %}</a>
@@ -339,16 +387,28 @@
             previewContainer.style.display = 'none';
             
             try {
+                const csrftoken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+                
                 const response = await fetch('{% url "remove_background" %}', {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    headers: {
+                        'X-CSRFToken': csrftoken,
+                    }
                 });
                 
                 if (!response.ok) {
-                    const error = await response.json();
-                    throw new Error(error.error || "{% trans 'Bir hata oluştu' %}");
+                    // Hata durumunda JSON kontrol et
+                    const contentType = response.headers.get('content-type');
+                    if (contentType && contentType.includes('application/json')) {
+                        const error = await response.json();
+                        throw new Error(error.error || "{% trans 'Bir hata oluştu' %}");
+                    } else {
+                        throw new Error("{% trans 'Sunucu hatası oluştu' %}");
+                    }
                 }
                 
+                // Başarılı durumda PNG blob
                 processedImageBlob = await response.blob();
                 const imageUrl = URL.createObjectURL(processedImageBlob);
                 

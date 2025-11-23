@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from django.http import JsonResponse, HttpResponse
-from django.views.decorators.csrf import ensure_csrf_cookie
 from django.conf import settings
 from django.utils import timezone
 from django.utils.translation import get_language
@@ -112,3 +111,26 @@ def privacy_policy(request):
 def terms(request):
     """Kullanım şartları"""
     return render(request, 'terms.html')
+
+def robots_txt(request):
+    """Robots.txt dosyası"""
+    from django.conf import settings
+    
+    protocol = 'https' if request.is_secure() else 'http'
+    
+    lines = [
+        "User-agent: *",
+        "Allow: /",
+        "",
+        "# Disallow bot honeypots",
+        "Disallow: /admin/",
+        "Disallow: /i18n/",
+        "",
+        "# Sitemap",
+        f"Sitemap: {protocol}://{settings.SITE_DOMAIN}/sitemap.xml",
+        "",
+        "# Crawl-delay",
+        "Crawl-delay: 1",
+    ]
+    
+    return HttpResponse("\n".join(lines), content_type="text/plain")

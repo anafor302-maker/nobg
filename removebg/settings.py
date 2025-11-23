@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hqu4@bpv&gy6=yv=ou1fh1tk1vcti8xh020^)b&tm3lpn_22sh'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ['nobg.com.tr', 'www.nobg.com.tr', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sitemaps',
 
     "remover",
 ]
@@ -165,3 +166,7 @@ SUSPICIOUS_PATTERNS = [
 
 
 REM_BG_SESSION = None
+
+# Site ayarları
+SITE_DOMAIN = 'nobg.com.tr'
+SITE_NAME = 'NoBG - Background Remover'
