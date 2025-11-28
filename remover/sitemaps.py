@@ -29,6 +29,10 @@ class StaticViewSitemap(Sitemap):
         activate(lang_code)
         url = reverse(view_name)
         
+        # Eğer URL zaten dil prefix'i içeriyorsa ekleme
+        if url.startswith(f'/{lang_code}/'):
+            return url
+        
         # Dil prefix'i ekle
         return f'/{lang_code}{url}'
     
